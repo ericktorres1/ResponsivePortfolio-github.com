@@ -1,0 +1,250 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica', Helvetica, sans-serif;
+    background: url(../images/dynamic-style.png);
+}
+
+/*
+    Global
+*/
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+ul {
+    display: inline;
+}
+
+.headings {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+/*
+    Header
+*/
+header {
+    background: #ffffff;
+    min-height: 70px;
+    border-bottom: 1px solid #cccccc;
+    width: 100%;
+}
+
+header h1 {
+    margin-bottom: 0;
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 10px 10px 22px 18px; 
+    
+}
+
+header a {
+    color: #777777; 
+    text-decoration: none;
+    font-size: 14px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 10px 10px 0 10px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+
+/*
+    Main
+*/
+.container-content {
+    width: 80%;
+    margin: 50px auto auto auto;
+    background: #ffffff;
+    
+}
+
+.container-content h2 {
+    padding-top: 20px;
+    padding-left: 22px;
+    color: #4aaaa5;
+}
+.container-content hr {
+    border: 1px solid #dddddd;
+    width: 96%;
+}
+
+.container-content img {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    width: 300px;
+    float: left;
+}
+
+.container-content p {
+    color: #777777;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    line-height: 40px;
+}
+
+/* container portfolio */
+
+.container-portfolio {
+    width: 80%;
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30%;
+    margin-top: 50px;
+    height: 120%; 
+    overflow: hidden;   
+}
+
+.container-portfolio h2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #4aaaa5;
+}
+.container-portfolio hr {
+    border: 1px solid #dddddd;
+    width: 96%;
+    margin-bottom: 20px;
+}
+
+.container-portfolio h3 {
+    background: #4aaaa5;
+    color: #ffffff;
+    width: 400px;
+    text-align: center;
+    position: absolute;
+    margin-top: 270px;
+
+}
+.img-port {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 400px;
+    float: left;
+    text-align: center;
+    
+}
+.container-portfolio img {
+    width: 400px;
+    margin-bottom: 20px;
+    
+}
+
+/* contact */
+
+.contact-frame {
+    margin-left: 20px;
+    color: #777777;
+}
+.contact-input {
+    color: #777777;
+    width: 97%;
+    margin-bottom: 20px;
+}
+#textbox {
+    height: 200px;
+    width: 97%;
+}
+
+#button {
+    margin-top: 10px;
+   background: #4aaaa5;
+   color: #ffffff;
+   padding: 15px 40px;  
+}
+/*
+    Footer
+*/
+footer {
+    background: #666666;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;;
+    /* height: 5%; */
+    border-top: #4aaaa5 solid 5px;
+    padding-top: 10px; 
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header #branding, .container,
+    header nav,
+    header nav li {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav {
+        padding: 10px;
+    }
+
+    header #branding{
+        margin-left: 0;
+    }
+    .container-content img, .container-content hr {
+        width: 88%;
+    }
+
+    .container-portfolio hr {
+        margin-bottom: 20px;
+        width: 85%;
+    }
+    .container-portfolio, .container-content {
+        margin-top: 20px;
+    }
+    
+    .container-portfolio img {
+        width: 65%;
+        margin-right: 40px;
+    }
+
+    .container-portfolio h3 {
+        background: #4aaaa5;
+        color: #ffffff;
+        text-align: center;
+        position: absolute;
+        margin-top: 165px;
+        margin-left: 4px;
+        padding-right: 8px;
+        width: 250px;
+    }
+    .container-portfolio img {
+        padding-right: 94px;
+        margin-bottom: 20px;
+    }
+}
